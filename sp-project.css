@@ -1,7 +1,19 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+/* html { 
+  background:  url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center fixed; 
+  background-size: cover;
+} */
+
+body {
+    background:  url(https://thumbs.gfycat.com/CorruptLinearElk-size_restricted.gif) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+}
+
+/* body{
 	background-image:url("sp2.jpg");
 	background-size: cover;
-}
+} */
 
 h1 {
     font-weight: 800;
@@ -31,6 +43,14 @@ h1 {
      color: white;
  }
 
+ .poster {
+    /* background-position: 100% 0;
+    background-size:50%; */
+    margin: 20px;
+    height: 850px;
+    margin-bottom: 20px;
+    margin-right: 180px;
+ }
  .table1 {
     justify-content: center;
     margin-left: 50px;
