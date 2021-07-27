@@ -4,6 +4,24 @@
   background-size: cover;
 } */
 
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:400px) {
+    /* For mobile phones: */
+    .poster {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
 body {
     background:  url(https://thumbs.gfycat.com/CorruptLinearElk-size_restricted.gif) no-repeat center center fixed; 
     background-size: cover;
@@ -20,10 +38,14 @@ h1 {
     color:white;
 }
 
-.top-buff1 { margin-top: 300px;}
+.top-buff1 { margin-top: 200px;}
 
 .top-buff2 { 
-    margin-top: 50px;
+    margin-top: 80px;
+}
+
+.top-buff3 { 
+    margin-top: 80px;
 }
  button {
      margin-left: 20px;
@@ -46,10 +68,17 @@ h1 {
  .poster {
     /* background-position: 100% 0;
     background-size:50%; */
-    margin: 20px;
-    height: 850px;
-    margin-bottom: 20px;
-    margin-right: 180px;
+    /* margin: auto; */
+    /* height: 850px; */
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    /* margin-left: 2rem; */
+    /* width: 50%;
+    height: auto; */
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
  }
  .table1 {
     justify-content: center;
@@ -57,3 +86,13 @@ h1 {
     margin-right: 50px;
     margin-top: 200px;
  }
+
+ .btn-circle.btn-xl {
+    width: 150px;
+    height: 150px;
+    padding: 10px 16px;
+    border-radius: 75px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
