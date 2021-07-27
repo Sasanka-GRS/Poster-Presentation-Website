@@ -4,7 +4,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="sp-project.css">
-        <title>Team-8</title>
+        <title>Team-5</title>
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
@@ -29,37 +29,44 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <div class="row">
                 <div class="col-sm-8 col-md-10 py-4">
-                  <h3 class="text-white"><u>A Method For Fine Resolution Frequency Estimation From Three DFT Samples</u></h4>
+                  <h3 class="text-white"><u>Consistent Sampling and Efficient
+                    Signal Reconstruction</u></h4>
                   
                 </div>
               </div>
                 <div style="margin-bottom: 20px;">
-                  <p class="text-white" >The parameter estimation of a complex exponential
-                    waveform observed under white noise is typically tackled in two
-                    stages. </p>
+                  <p class="text-white" >We propose efficient signal reconstruction methods
+                    such that the reconstructed signal has the same measurements
+                    as the underlying original signal if the former was observed by
+                    the same system as that for the latter. The reconstructed signal
+                    is a linear combination of reconstruction functions, and the main
+                    task is to compute the coefficients from the measurements. </p>
                   
-                  <p class="text-white" >In the first stage, a coarse frequency estimate is found by
-                    the application of an N-point DFT to the input of length . In the
-                    second stage, a fine search around the peak determined in the first
-                    stage is conducted. </p>
+                  <p class="text-white" >This
+                    generally involves an inversion of the cross-correlation matrix
+                    between the sampling functions and the reconstruction functions.
+                    We show that the coefficients are computed efficiently using the
+                    discrete Fourier transform (DFT) when sampling is shift-invariant
+                    and when the reconstruction functions are shift-invariant functions, Fourier basis functions, or Fourier cosine basis functions.
+                    
+                    </p>
                   
-                  <p class="text-white" >The method proposed in this paper presents a
-                    simpler alternative. The method suggests a nonlinear relation in-
-                    volving three DFT samples already calculated in the first stage to
-                    produce a real valued, fine resolution frequency estimate. The esti-
-                    mator approaches Jacobsen’s estimator for large and presents a
-                    bias correction.</p>
+                  <p class="text-white" >Because of the DFT, the proposed methods do not require matrix
+                    inversion computation; rather these methods make it possible to
+                    obtain the coefficients with an O(N log N) computation, where
+                    stands for the number of samples. We show the effectiveness of
+                    the proposed method by experiments using an ECG signal.</p>
                     
                 </div>
                 
                 
                 <h3 class="text-white" style="margin-bottom: 20px;"><u>Team Members</u></h4>
                 <ul class="list-unstyled" style="margin-bottom: 20px;">
-                  <li><a class="text-white">Harish Umasankar</a></li>
-                  <li><a class="text-white">Dosapati Sri Anvith</a></li>
+                  <li><a class="text-white">L Lakshmanan</a></li>
+                  <li><a class="text-white">Ananya Sane</a></li>
                 </ul>
 
-                <h4><a href="https://ieeexplore.ieee.org/document/5741829" target="_blank">Click here</a><span class="text-white"> to access the Research paper</span></h4>
+                <h4><a href="https://ieeexplore.ieee.org/abstract/document/5175250" target="_blank">Click here</a><span class="text-white"> to access the Research paper</span></h4>
                 
 
               </div>
