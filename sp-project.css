@@ -85,7 +85,7 @@ h1 {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 200px;
-    width:100%; 
+    /* width:100%;  */
     border-collapse:collapse; 
  }
   .table1 td{ 
