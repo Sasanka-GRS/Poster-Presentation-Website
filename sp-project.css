@@ -85,7 +85,21 @@ h1 {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 200px;
+    width:100%; 
+    border-collapse:collapse; 
  }
+  .table1 td{ 
+    padding:7px; 
+    border:#4e95f4 1px solid;
+  }
+  /* Define the default color for all the table rows */
+  .table1 tr{
+    background: none;
+  }
+/* Define the hover highlight color for the table row */
+  .table1 tr:hover {
+      background-color: #a7bed3;
+  }
 
  .btn-circle.btn-xl {
     width: 150px;
