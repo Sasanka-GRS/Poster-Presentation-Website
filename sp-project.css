@@ -80,13 +80,16 @@ h1 {
     min-width: 300px;
     height: auto;
  }
+
  .table1 {
+    /*position: relative;*/
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 200px;
-    /* width:100%;  */
-    border-collapse:collapse; 
+    margin-top: 1000px;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
  }
   .table1 td{ 
     padding:7px; 
@@ -95,10 +98,20 @@ h1 {
   /* Define the default color for all the table rows */
   .table1 tr{
     background: none;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
   }
 /* Define the hover highlight color for the table row */
   .table1 tr:hover {
       background-color:#3626a7;
+      transform: scale(1.02);
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+  }
+
+  @media only screen and (max-width: 768px){
+    table1{
+      width:90%;
+    }    
   }
 
  .btn-circle.btn-xl {
@@ -118,6 +131,7 @@ h1 {
 .container {
   text-align: center;
   position: absolute;
+  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -178,7 +192,7 @@ pl li b{
   height: 150px;
   text-align: center;
   line-height: 150px;
-  background: #6a7886;
+  background: #184e77;
   border-radius: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -207,6 +221,7 @@ pl li b:hover::before {
 
 pl li b:hover {
   color: #99CCFF;
+  background: #6a7886;
   box-shadow: 0 0 5px #99CCFF;
   text-shadow: 0 0 5px #99CCFF;
 }
@@ -218,7 +233,7 @@ pl li c {
   height: 150px;
   text-align: center;
   line-height: 150px;
-  background: #7e7c5f;
+  background: #ff6d00;
   border-radius: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -247,6 +262,7 @@ pl li c:hover::before {
 
 pl li c:hover {
   color: #ffee10;
+  background: #7e7c5f;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
 }
@@ -273,7 +289,7 @@ ll li d {
   height: 150px;
   text-align: center;
   line-height: 150px;
-  background: #5b7057;
+  background: #2a9d8f;
   border-radius: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -302,6 +318,7 @@ ll li d:hover::before {
 
 ll li d:hover {
   color: #39ff14;
+  background: #5b7057;
   box-shadow: 0 0 5px #39ff14;
   text-shadow: 0 0 5px #39ff14;
 }
@@ -313,7 +330,7 @@ ll li e {
   height: 150px;
   text-align: center;
   line-height: 150px;
-  background: #705353;
+  background: #C5075D;
   border-radius: 50%;
   font-size: 20px;
   font-weight: 800;
@@ -342,8 +359,27 @@ ll li e:hover::before {
 
 ll li e:hover {
   color: #FF00FF;
+  background: #705353;
   box-shadow: 0 0 5px #FF00FF;
   text-shadow: 0 0 5px #FF00FF;
+}
+
+@media only screen and (max-width: 768px){
+  table1{
+    width:90%;
+  }
+  
+  pl{
+    width:100%;
+  }
+
+  ll{
+    width:100%;
+  }
+
+  container{
+    width: 90%;
+  }
 }
 
 @keyframes text{
