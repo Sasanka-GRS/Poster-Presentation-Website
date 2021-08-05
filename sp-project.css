@@ -364,6 +364,16 @@ ll li e:hover {
   text-shadow: 0 0 5px #FF00FF;
 }
 
+h2 {
+  margin-bottom: 50px;
+  font-family: 'Merriweather', serif;
+}
+
+h3 {
+  margin-bottom: 50px;
+  font-family: 'Merriweather', serif;
+}
+
 @media only screen and (max-width: 768px){
   table1{
     width:90%;
